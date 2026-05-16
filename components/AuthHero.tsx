@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/paths";
 
 export default function AuthHero() {
   return (
@@ -19,7 +20,7 @@ export default function AuthHero() {
       />
       <div className="relative z-10">
         <Image
-          src="/chosen_gym_white.png"
+          src={asset("/chosen_gym_white.png")}
           alt="Chosen Gym"
           width={150}
           height={50}

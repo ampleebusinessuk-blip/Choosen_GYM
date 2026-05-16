@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { asset } from "@/lib/paths";
 
 export default function Logo() {
   return (
     <div className="px-5 py-5">
       <Image
-        src="/chosen_gym_white.png"
+        src={asset("/chosen_gym_white.png")}
         alt="Chosen Gym"
         width={170}
         height={56}
